@@ -1,0 +1,27 @@
+{
+  "name": "basic-readme-generator",
+  "version": "1.0.0",
+  "description": "Nodejs CLI app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treecao/basic-readme-generator.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Inquirer"
+  ],
+  "author": "Tree",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treecao/basic-readme-generator/issues"
+  },
+  "homepage": "https://github.com/treecao/basic-readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
