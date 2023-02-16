@@ -27,7 +27,7 @@ function generateMarkdown(data) {
 
 
 ### Installation
-Installation Requirements ${data.Requirements}
+${data.Requirements}
 
 
 
@@ -52,7 +52,7 @@ ${data.Contributors}
 
 
 ### Github
-[Github Profle](https://github.com/${data.Github})
+[Github Profile](https://github.com/${data.Github})
 
 
 
