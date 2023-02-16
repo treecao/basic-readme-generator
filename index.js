@@ -1,56 +1,56 @@
-// TODO: Include packages needed for this application
-const inquirer = require("inquirer")  // Accept userinput from command line
-const fs = require("fs");//manipulate files - read write operations
+//packages needed for this application
+const inquirer = require("inquirer")  //accepts userinput from command line
+const fs = require("fs"); //manipulates files - read/write operations
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+//array of questions
 const questions = [
     {
         type:"input",
-        message:"Enter Project Title: ",
+        message:"README Title: ",
         name:"title"
     },
 
     {
         type:"input",
-        message:"Enter Project Description: ",
+        message:"Description of Project: ",
         name:"Description"
     },
 
     {
         type:"input",
-        message:"Enter Project Installation Requirements: ",
+        message:"Installation Instructions/Requirements: ",
         name:"Requirements"
     },
 
     {
         type:"input",
-        message:"Enter Project Testing: ",
+        message:"Project Testing: ",
         name:"Testing"
     },
 
     {
         type:"input",
-        message:"Enter Project Usage: ",
+        message:"Project Usage: ",
         name:"Usage"
     },
 
     {
         type:"list",
-        message:"Enter Project License: ",
+        message:"Select a License: ",
         name:"License",
         choices:['MIT', 'ISC', 'GPL', 'Apache 2.0', 'No License']
     },
 
     {
         type:"input",
-        message:"Enter Project Contributors: ",
+        message:"Contributors: ",
         name:"Contributors"
     },
 
     {
         type:"input",
-        message:"Enter Github Username: ",
+        message:"Github Username: ",
         name:"Github"
     },
 
@@ -61,14 +61,14 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+//write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(fileName, generateMarkdown(data),function(err){
         if(err) throw err;
     });
 }
 
-// TODO: Create a function to initialize app
+//initialize app
 function init() {
     inquirer.prompt(questions)
     .then(response => {
@@ -77,5 +77,5 @@ function init() {
     })
 }
 
-// Function call to initialize app
+//initialize app
 init();

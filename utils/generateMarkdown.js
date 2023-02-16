@@ -1,26 +1,16 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+//generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
-## Table of Content
+  ### Description
+  ${data.Description}
+
+
+  ## Table of Contents
 
 - [Description](#description)
 
-- [Requirements](#requirements)
-
-- [Testing](#testing)
+- [Installation](#requirements)
 
 - [Usage](#usage)
 
@@ -28,17 +18,17 @@ function generateMarkdown(data) {
 
 - [Contributors](#contributors)
 
+- [Testing](#testing)
+
 - [Github](#github)
 
 - [Email](#email)
 
 
-### Description
-${data.Description}
 
-
-### Requirements
+### Installation
 Installation Requirements ${data.Requirements}
+
 
 
 ### Testing
@@ -56,7 +46,6 @@ ${licenseInfo(data.License)}
 
 
 
-
 ### Contributors
 ${data.Contributors}
 
@@ -66,18 +55,20 @@ ${data.Contributors}
 [Github Profle](https://github.com/${data.Github})
 
 
+
 ### Email
-If you have any questions about this project, reach me at this email: ${data.Email}
+If you have any questions about this project, feel free to reach me at: ${data.Email}
 `;
 }
 
 
-//generate badge 
+//generate license badge 
 function licenseBadge(license) {
   return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
   
 } 
 
+//generate license info
 function licenseInfo(license) {
   return `${licenseBadge(license)}
   [License Info](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository)`
