@@ -1,14 +1,14 @@
-# a
+# Basic README Generator
 
-  ![GitHub license](https://img.shields.io/badge/license-undefined-blue.svg)
+  ### Description
+  A basic README generator that enables users to quickly create a professional README for a new project.
 
-## Table of Content
+
+  ## Table of Contents
 
 - [Description](#description)
 
-- [Requirements](#requirements)
-
-- [Testing](#testing)
+- [Installation](#requirements)
 
 - [Usage](#usage)
 
@@ -16,26 +16,26 @@
 
 - [Contributors](#contributors)
 
+- [Testing](#testing)
+
 - [Github](#github)
 
 - [Email](#email)
 
 
-### Description
-b
 
+### Installation
+Clone Repo > Install Inquirer "npm install" > Initiate program "node index" > follow the prompts on the screen > select enter after each input to return
 
-### Requirements
-Installation Requirements c
 
 
 ### Testing
-d
+N/A 
 
 
 
 ### Usage
-e
+Used by anyone who wants to quickly create a profressional README
 
 
 
@@ -45,15 +45,15 @@ e
 
 
 
-
 ### Contributors
-f
+treecao 
 
 
 
 ### Github
-[Github Profle](https://github.com/g)
+[Github Profile](https://github.com/treecao)
+
 
 
 ### Email
-If you have any questions about this project, reach me at this email: h
+If you have any questions about this project, feel free to reach me at: treecoww@ymail.com
